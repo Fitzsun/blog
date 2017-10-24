@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
+    {{--  cross site request forgery or XSRF 跨站请求伪造 One Click Attack / Session Riding  --}}
+    {{--  网站设置token的作用  --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name') }} Dashboard</title>
@@ -13,7 +15,7 @@
     <!-- Icon -->
     <link rel="shortcut icon" href="{{ config('blog.default_icon') }}">
 
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     <style>
         [v-cloak] { display: none; }
@@ -32,7 +34,7 @@
 <body>
     <div id="app"></div>
 
-    <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     @if(config('blog.google.open'))
     <script>

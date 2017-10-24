@@ -22,6 +22,8 @@ export default {
         Navbar,
         FooterBar
     },
+    // 计算属性和观察者的区别
+    // 对于复杂的逻辑,应该使用计算属性->具有缓存
     computed: {
         isToggle () {
             return this.$store.state.sidebar.opened
@@ -82,6 +84,7 @@ body {
     margin-right: -250px;
 }
 
+// 媒体查询技术  响应式768px
 @media(max-width: 768px) {
     #page-content-wrapper {
         padding-left: 0;

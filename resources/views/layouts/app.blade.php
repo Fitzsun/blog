@@ -14,7 +14,7 @@
 
     <title>@yield('title', config('app.name'))</title>
 
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/home.css') }}">
 
     <!-- Scripts -->
     <script>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/home.js') }}"></script>
+    <script src="{{ mix('js/home.js') }}"></script>
 
     @yield('scripts')
 
